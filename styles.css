@@ -21,7 +21,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;s
+  /*border:10px solid red;*/
+  /*background-image: url("assets/css/americanPsycho.gif");*/
   border-radius:10px;
   position:absolute;
 }

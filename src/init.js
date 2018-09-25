@@ -31,7 +31,23 @@ $(document).ready(function() {
     console.log(dancer)
     // console.log('i am dancer', dancer)
     // console.log(dancer.$node)
+    // $('body').append('<img src="assets/css/793.gif">')
+    // $('body').append('<img src="assets/css/americanPsycho.gif">')
+    $('body').append('<img src="assets/css/strawberry.gif">')
+    // $('body').append('<img src="assets/css/peanutButterJellyTime.gif">')
+    $('body').append('<img src="assets/css/carrotBanana.gif">')
+    $('body').append('<img src="assets/css/greenBanana.gif">')
+    // $('body').append('<img src="assets/css/orangeBanana.gif">')
+    $('body').append('<img src="assets/css/pineappleBanana.gif">')
+    $('body').append('<img src="assets/css/burningBanana.gif">')
+    $('body').append('<img src="assets/css/hatBanana.gif">')
+    // $('body').append('<img src="assets/css/duet.gif">')
+    $('body').append('<img src="assets/css/raninbowBanana.gif">')
+    $('body').append('<img src="assets/css/Peanut-butter-jelly-time.gif">')
     $('body').append(dancer.$node);
   });
+  
+  
+  
 });
 
