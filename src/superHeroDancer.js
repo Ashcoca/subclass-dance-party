@@ -1,3 +1,0 @@
-var SuperHeroDancer = function() {
-  
-}

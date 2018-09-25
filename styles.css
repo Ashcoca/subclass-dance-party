@@ -3,18 +3,52 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
   font-size: 18px;
+  overflow: hidden;
+  
+  /* pulsing back ground */
+  background-color: #222;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
 }
+
+/* pulsing back ground */
+@keyframes color {
+  0% {
+    background-color: #222;
+  }
+  50% {
+    background-color: #4285f4;
+  }
+  100 {
+    background-color: #222;
+  }
+}
+
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
 
 .title, .lineUpDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+.title, .addFruitDancerButton {
+  padding:5px 12px;
+  float:right;
+}
+
+.title, .addVegetableDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -49,15 +83,53 @@ body, a:link, a:visited, a:active{
 
 
 
+
 img {
 
 
 }
 
 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) rotate(300deg);
+  /*transform: rotate(300deg);*/
   transition-duration: 0.5s;
 
-
-
 }
+
+.row {
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*flashing background!
+@-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1s infinite;
+}
+*/
