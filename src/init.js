@@ -17,17 +17,13 @@ $(document).ready(function() {
      * to the stage.
      */
   $('.addDancerButton').on('click', function(event) {
-
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    // console.log($(this).data('dancer-maker-function-name'))
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
     console.log(window[dancerMakerFunctionName]);
     
     // make a dancer with a random position
-    // console.log(dancerMakerFunction); // "MakeBlinkyDancer" function
-    
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),

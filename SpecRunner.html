@@ -9,14 +9,14 @@
   <script src="lib/sinon/sinon.js"></script>
   <script>
     mocha.setup('bdd');
-window.expect = chai.expect;
-$(function() {
-  window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
-});
+    window.expect = chai.expect;
+    $(function() {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    });
   </script>
   <script src="spec/blinkyDancerSpec.js"></script>
-  <script src="spec/fruitDancerSpec.js"></script>
   <script src="src/fruitDancer.js"></script>
+  <script src="src/vegetableDancer.js"></script>
   <script src="src/dancer.js"></script>
   <script src="src/blinkyDancer.js"></script>
 </head>

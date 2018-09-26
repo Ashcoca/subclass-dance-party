@@ -12,6 +12,14 @@ describe('blinkyDancer', function() {
   it('should have a jQuery $node object', function() {
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
+  
+  it('should not have element img', function() {
+    expect(blinkyDancer).to.not.have.property('img');
+  });
+  
+  it('should not have class row before click', function() {
+    expect(blinkyDancer).to.not.have.property('row');
+  });
 
   it('should have a step function that makes its node blink', function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
@@ -35,18 +43,5 @@ describe('blinkyDancer', function() {
     
 });
 
-// describe('vegetableDancer', function() {
-
-//   var vegetableDancer;
-
-//   beforeEach(function() {
-//     vegetableDancer = new MakeVegetableDancer();
-
-//   });
-//   it('should have a jQuery $node object', function() {
-//     expect(vegetableDancer.$node).to.be.an.instanceof(jQuery);
-//   });
-
-// });
 
   
