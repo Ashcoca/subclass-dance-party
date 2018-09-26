@@ -3,11 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  /*background-color:#444;*/
   font-size: 18px;
   overflow: hidden;
   
-  /* pulsing back ground */
+  /* pulsing background */
   background-color: #222;
   animation-name: color;
   animation-duration: 2s;
@@ -15,7 +14,7 @@ body{
 
 }
 
-/* pulsing back ground */
+/* pulsing background */
 @keyframes color {
   0% {
     background-color: #222;
@@ -32,7 +31,6 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-
 
 .title, .addDancerButton{
   padding:5px 12px;
@@ -64,29 +62,14 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer{
-  /*border:10px solid red;*/
-  /*background-image: url("assets/css/americanPsycho.gif");*/
   border-radius:10px;
   position:absolute;
   
 }
 
-.dancer:hover {
-
-
-}
-
 .hatBanana {
   max-width: 200px;
   max-height: 200px;
-}
-
-
-
-
-img {
-
-
 }
 
 img:hover {
@@ -104,32 +87,3 @@ img:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/*flashing background!
-@-webkit-keyframes argh-my-eyes {
-    0%   { background-color: #fff; }
-    49% { background-color: #fff; }
-    50% { background-color: #000; }
-    99% { background-color: #000; }
-    100% { background-color: #fff; }
-  }
-  @-moz-keyframes argh-my-eyes {
-    0%   { background-color: #fff; }
-    49% { background-color: #fff; }
-    50% { background-color: #000; }
-    99% { background-color: #000; }
-    100% { background-color: #fff; }
-  }
-  @keyframes argh-my-eyes {
-    0%   { background-color: #fff; }
-    49% { background-color: #fff; }
-    50% { background-color: #000; }
-    99% { background-color: #000; }
-    100% { background-color: #fff; }
-  }
-  body {
-  -webkit-animation: argh-my-eyes 1s infinite;
-  -moz-animation:    argh-my-eyes 1s infinite;
-  animation:         argh-my-eyes 1s infinite;
-}
-*/

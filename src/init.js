@@ -33,21 +33,10 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    console.log(dancer);
-    // console.log('i am dancer', dancer)
-    // console.log(dancer.$node)
-    // $('body').append('<img src="assets/css/793.gif">')
-    // $('body').append('<img class="americanPsy animated infinite rollIn" src="assets/css/americanPsycho.gif">')
-   
-    // $('body').append('<img src="assets/css/peanutButterJellyTime.gif">')
-    
-    // $('body').append('<img src="assets/css/orangeBanana.gif">')
-    
     
     $('body').append('<img class="hamster animated infinite rollIn" src="assets/css/HamsterDance.gif">');
     $('body').append('<img class="mario animated infinite flash bounce" src="assets/css/duet.gif">');
     $('body').append('<img class="raninbowBanana animated infinite zoomInDown" src="assets/css/raninbowBanana.gif">');
-    // $('body').append('<img class="raninbowBanana" src="assets/css/raninbowBanana.gif">');
     $('body').append(dancer.$node);
 
     $('img').each(function() {
@@ -64,43 +53,37 @@ $(document).ready(function() {
   
   $('.addFruitDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    // console.log($(this).data('dancer-maker-function-name'))
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    // console.log(window[dancerMakerFunctionName])
-    
     
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append('<img class="strawberry" src="assets/css/strawberry.gif">');
-    $('body').append('<img class="pineappleBanana" src="assets/css/pineappleBanana.gif">');
-    $('body').append('<img class="burningBanana" src="assets/css/burningBanana.gif">');
-    $('body').append('<img class="hatBanana" src="assets/css/hatBanana.gif">');
-    $('body').append('<img class="Peanut-butter-jelly-time" src="assets/css/Peanut-butter-jelly-time.gif">');
+    
+    $('body').append('<img class="strawberry fruit" src="assets/css/strawberry.gif">');
+    $('body').append('<img class="pineappleBanana fruit" src="assets/css/pineappleBanana.gif">');
+    $('body').append('<img class="burningBanana fruit" src="assets/css/burningBanana.gif">');
+    $('body').append('<img class="hatBanana fruit" src="assets/css/hatBanana.gif">');
+    $('body').append('<img class="Peanut-butter-jelly-time fruit" src="assets/css/Peanut-butter-jelly-time.gif">');
     $('body').append(dancer.$node);
   });
   
   
   $('.addVegetableDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    console.log($(this).data('dancer-maker-function-name'));
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    console.log(window[dancerMakerFunctionName]);
-    
     
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-        
-
+    
     $('body').append('<img class="carrotBanana animated infinite bounce"  src="assets/css/carrotBanana.gif">');
     $('body').append('<img class="greenBanana animated infinite bounce"" src="assets/css/greenBanana.gif">');
     $('body').append(dancer.$node);
@@ -125,10 +108,6 @@ $(document).ready(function() {
     $(this).css('webkit-transform', 'scale(' + 1.5 + ')');
   }, function() {
     $(this).css('webkit-transform', 'scale(1.0)');
-    // })
   });
-
-  
-
 });
 
